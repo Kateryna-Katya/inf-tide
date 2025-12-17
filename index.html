@@ -1,56 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/inf-tide/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inf-Tide | Карьерный апгрейд и консалтинг</title>
+    <meta name="description" content="Платформа года для карьерного роста. Экспертная поддержка и инновационные стратегии.">
+
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" crossorigin src="/inf-tide/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/inf-tide/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/inf-tide/assets/styles-DTgxBtYd.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="/" class="header__logo">
+          Inf-Tide<span class="header__dot">.</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="header__nav">
+          <ul class="header__menu">
+              <li class="header__item"><a href="#hero" class="header__link">Главная</a></li>
+              <li class="header__item"><a href="#about" class="header__link">О платформе</a></li>
+              <li class="header__item"><a href="#benefits" class="header__link">Преимущества</a></li>
+              <li class="header__item"><a href="#innovation" class="header__link">Инновации</a></li>
+              <li class="header__item"><a href="#blog" class="header__link">Блог</a></li>
+          </ul>
+      </nav>
+
+      <div class="header__actions">
+          <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+          <button class="header__burger" aria-label="Меню">
+              <i data-lucide="menu"></i>
+          </button>
+      </div>
   </div>
 </header>
 
 
-    <main>
+    <main class="main" id="main-content">
       <!-- Loads the specified .html file -->
       
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+      <div class="footer__grid">
+          <div class="footer__col">
+              <a href="/" class="footer__logo">Inf-Tide.blog</a>
+              <p class="footer__desc">
+                  Решения, которые меняют правила игры.
+                  Экспертная поддержка на всех этапах вашего карьерного пути.
+              </p>
+              <div class="footer__copyright">
+                  &copy; 2025 Inf-Tide. Все права защищены.
+              </div>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Навигация</h3>
+              <ul class="footer__links">
+                  <li><a href="#about">О нас</a></li>
+                  <li><a href="#blog">Блог</a></li>
+                  <li><a href="#contact">Контакты</a></li>
+                  <li><a href="#innovation">Технологии</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Информация</h3>
+              <ul class="footer__links">
+                <li><a href="privacy.html">Политика конфиденциальности</a></li>
+                <li><a href="cookies.html">Политика использования файлов cookie</a></li>
+                <li><a href="terms.html">Условия использования</a></li>
+                <li><a href="return.html">Политика возврата средств</a></li>
+                <li><a href="disclaimer.html">Отказ от ответственности</a></li>
+                <li><a href="personal-data-policy.html">Персональные данные</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+            <h3 class="footer__title">Контакты</h3>
+            <ul class="footer__contacts">
+                <li>
+                    <i data-lucide="map-pin"></i>
+                    <span>Via Alessandro Manzoni 12, 20121 Milano, Italia</span>
+                </li>
+                <li>
+                    <i data-lucide="phone"></i>
+                    <a href="tel:+390287391455">+39 02 8739 1455</a>
+                </li>
+                <li>
+                    <i data-lucide="mail"></i>
+                    <a href="mailto:support@inf-tide.blog">support@inf-tide.blog</a>
+                </li>
+            </ul>
+        </div>
+      </div>
   </div>
 </footer>
-
 
   </body>
 </html>
