@@ -732,3 +732,128 @@ h1, h2, h3, h4 {
   transform: translateY(20px);
   transition: all 0.3s ease;
 }
+/* --- Cookie Popup --- */
+.cookie-popup {
+  position: fixed;
+  bottom: -100px; /* Скрыт по умолчанию */
+  left: 20px;
+  right: 20px;
+  max-width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+  z-index: 999;
+  border: 1px solid var(--border-color);
+  transition: bottom 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cookie-popup.show {
+  bottom: 20px; /* Показываем */
+}
+
+.cookie-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.cookie-content p {
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--text-main);
+}
+
+.cookie-content a {
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.btn--sm {
+  padding: 8px 20px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .cookie-popup {
+      left: 10px;
+      right: 10px;
+      bottom: -150px;
+  }
+  .cookie-content {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+  }
+  .btn--sm {
+      width: 100%;
+  }
+}
+/* --- Legal Pages Styles --- */
+.pages {
+  padding: 140px 0 80px; /* Отступ сверху для хедера */
+  background-color: var(--bg-color);
+  min-height: 80vh;
+}
+
+.pages h1 {
+  font-family: var(--font-display);
+  font-size: 48px;
+  color: var(--primary);
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(15, 44, 89, 0.1);
+  padding-bottom: 20px;
+}
+
+.pages h2 {
+  font-family: var(--font-display);
+  font-size: 28px;
+  color: var(--primary);
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.pages p, .pages li {
+  font-family: var(--font-main);
+  font-size: 16px;
+  color: var(--text-main);
+  line-height: 1.7;
+  margin-bottom: 16px;
+  max-width: 800px; /* Ограничиваем ширину для удобного чтения */
+}
+
+.pages ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 24px;
+  max-width: 800px;
+}
+
+.pages li {
+  margin-bottom: 10px;
+}
+
+.pages strong {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.pages a {
+  color: var(--accent);
+  text-decoration: underline;
+  transition: var(--transition);
+}
+
+.pages a:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* Адаптив для текста */
+@media (max-width: 768px) {
+  .pages h1 { font-size: 32px; }
+  .pages h2 { font-size: 24px; }
+}
