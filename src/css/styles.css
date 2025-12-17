@@ -721,3 +721,14 @@ h1, h2, h3, h4 {
 
   .innovation__stats { flex-direction: column; gap: 40px; }
 }
+.mobile-menu__footer {
+  margin-top: 60px;
+  text-align: center;
+  color: rgba(255,255,255,0.5);
+  font-size: 14px;
+
+  /* --- ДОБАВЛЕНО ДЛЯ СКРЫТИЯ --- */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
